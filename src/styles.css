@@ -23,7 +23,7 @@ body
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding : 1% 0;
+    padding : 1% 2%;
     background-color: var(--mainShade,black);
 }
 .logo
@@ -32,7 +32,6 @@ body
 }
 .navButtons
 {
-    padding : 0 5%;
     display: flex;
     justify-content: space-between;
     gap :5rem;
