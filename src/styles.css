@@ -26,6 +26,7 @@ body
     align-items: center;
     padding : 1% 2%;
     background-color: var(--mainShade,black);
+    box-shadow: 0 0.1rem 0.2rem 0.3rem var(--mainGold,gold);
 }
 .logo
 {
@@ -59,11 +60,6 @@ body
     width: 65%;
     color: var(--mainGold,gold);
 }
-#container
-{
-    display: flex;
-    justify-content: space-between;
-}
 .mainHeading
 {
     padding-top: 30%;
@@ -86,4 +82,54 @@ body
     outline: none;
     border: 0.1rem solid var(--mainGold,gold);
 
+}
+.menuContent
+{
+    display: flex;
+    justify-content: center;
+    padding : 2rem 0;
+}
+.menuBackground
+{
+    background-image: url('./menu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 600px;
+    min-height: 800px;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.menuLogo
+{
+    display: flex;
+    justify-content: center;
+}
+.menuLogo>img
+{
+    width: 6rem;
+}
+.menuItem
+{
+    color: var(--mainGold,gold);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 1rem;
+}
+.menuItem>h3
+{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.menuItem>p
+{
+    font-size: 2rem;
+    font-weight: 500;
+    max-width: 70%;
+    text-align: center;
 }
