@@ -1,17 +1,5 @@
-import './styles.css';
-import logo from './premiumLogo.png';
-
-export function homePage()
+export function homePage(logo,contentDiv)
 {
-
-const navButtons = document.querySelector('.navButtons');
-const iconDiv = document.createElement('div');
-navButtons.before(iconDiv);
-const icon = document.createElement('img');
-icon.src = logo;
-iconDiv.appendChild(icon);
-icon.classList.add('logo');
-const contentDiv = document.querySelector('#content');
 const contentHighLight = document.createElement('div');
 contentDiv.appendChild(contentHighLight);
 const mainLogo = document.createElement('div');

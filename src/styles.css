@@ -10,6 +10,7 @@
     font-size: 62.5%;
     --main_background : silver;
     --mainShade : rgba(0, 0, 0, 0.685);
+    --mainGold : rgb(201, 171, 1);
 }
 body
 {
@@ -33,8 +34,9 @@ body
 .navButtons
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap :5rem;
+    width: 30%;
 }
 .mainImage
 {
@@ -55,7 +57,7 @@ body
     justify-content: flex-start;
     font-size: 5.5rem;
     width: 65%;
-    color: rgb(201, 171, 1);
+    color: var(--mainGold,gold);
 }
 #container
 {
@@ -73,4 +75,15 @@ body
     font-size: 3rem;
     font-weight: 900;
     padding-left: 0.5rem;
+}
+.navButtons > button
+{
+    font-size: 1.6rem;
+    background-color: var(--mainShade);
+    padding : 3% 6%;
+    color: var(--mainGold,gold);
+    border-radius: 2rem;
+    outline: none;
+    border: 0.1rem solid var(--mainGold,gold);
+
 }
