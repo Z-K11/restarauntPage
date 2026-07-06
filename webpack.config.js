@@ -1,5 +1,6 @@
 import path from "node:path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import { watchFile } from "node:fs";
 
 export default
 {
@@ -28,5 +29,9 @@ export default
                 type:'asset/resource',
             },
         ],
+    },
+    devtool:'eval-source-map',
+    devServer:{
+        watchFiles:["src/template.html"],
     },
 };
