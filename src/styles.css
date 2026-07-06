@@ -9,11 +9,13 @@
 {
     font-size: 62.5%;
     --main_background : silver;
-    --mainShade : rgba(0, 0, 0, 0.356);
+    --mainShade : rgba(0, 0, 0, 0.685);
 }
 body
 {
-    background-color: var(--main_background,silver);
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
 .navBar
@@ -26,7 +28,7 @@ body
 }
 .logo
 {
-    width: 15%;
+    width: 12%;
 }
 .navButtons
 {
@@ -34,4 +36,12 @@ body
     display: flex;
     justify-content: space-between;
     gap :5rem;
+}
+.mainImage
+{
+    width: 33%;
+}
+.mainImage:hover
+{
+    width: 35%;
 }
