@@ -4,8 +4,8 @@ import { watchFile } from "node:fs";
 
 export default
 {
-    mode:"developement",
-    entry:'src/index.js',
+    mode:"development",
+    entry:'./src/index.js',
     output:
     {
         filename:"main.js",
@@ -14,9 +14,9 @@ export default
     },
     plugins:
     [
-        new HtmlWebpackPlugin({template:'src/template.html',}),
+        new HtmlWebpackPlugin({template:'./src/template.html',}),
     ],
-    modules:
+    module:
     {
         rules:
         [
@@ -32,6 +32,6 @@ export default
     },
     devtool:'eval-source-map',
     devServer:{
-        watchFiles:["src/template.html"],
+        watchFiles:["./src/template.html"],
     },
 };
