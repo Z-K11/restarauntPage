@@ -1,0 +1,10 @@
+import './styles.css';
+import logo from './icon.png';
+console.log("Successfuly loaded index.js");
+const navButtons = document.querySelector('.navButtons');
+const iconDiv = document.createElement('div');
+navButtons.before(iconDiv);
+const icon = document.createElement('img');
+icon.src=logo;
+iconDiv.appendChild(icon);
+icon.classList.add('logo');

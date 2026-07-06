@@ -1,0 +1,37 @@
+*
+{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+:root
+{
+    font-size: 62.5%;
+    --main_background : silver;
+    --mainShade : rgba(0, 0, 0, 0.356);
+}
+body
+{
+    background-color: var(--main_background,silver);
+    
+}
+.navBar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 1% 0;
+    background-color: var(--mainShade,black);
+}
+.logo
+{
+    width: 15%;
+}
+.navButtons
+{
+    padding : 0 5%;
+    display: flex;
+    justify-content: space-between;
+    gap :5rem;
+}
