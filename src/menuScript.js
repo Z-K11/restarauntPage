@@ -1,4 +1,3 @@
-// import menuBackground from './menu.png';
 export function displayMenu(logo)
 {
     const contentBox = document.querySelector('#content');
