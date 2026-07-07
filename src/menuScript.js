@@ -1,7 +1,9 @@
 export function displayMenu(logo)
 {
     const contentBox = document.querySelector('#content');
-    contentBox.classList.add('menuContent');
+    const menuContent=document.createElement('div');
+    contentBox.appendChild(menuContent);
+    menuContent.classList.add('menuContent');
     const menuWallpaper = document.createElement('div');
     menuWallpaper.classList.add('menuBackground');
     console.log('Menu Script Loaded Successfuly');

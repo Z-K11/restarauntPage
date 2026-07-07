@@ -1,8 +1,9 @@
 export function aboutSection(logo)
 {
+    const contentDiv = document.createElement('div');
     const aboutHeading = document.createElement('h2');
-    const contentDiv = document.querySelector('#content');
-    contentDiv.appendChild(aboutHeading);
+    const aboutContent = document.querySelector('#content');
+    aboutContent.appendChild(contentDiv);
     aboutHeading.textContent='About Me';
     contentDiv.classList.add('aboutContent');
     aboutHeading.classList.add('aboutHeading');
