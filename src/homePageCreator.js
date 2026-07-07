@@ -18,7 +18,7 @@ const mainHeadingText = document.createElement('p');
 const subHeadingText = document.createElement('p');
 mainHeadingText.textContent = 'Nothing Nutritional Stays Hidden From Agent Chef';
 contentHighLight.classList.add('headingStyler');
-subHeadingText.textContent='Safe And Healthy Kitchen';
+subHeadingText.textContent='Safe,Clean and Germ Free Kitchen';
 mainHeading.classList.add('mainHeading');
 subHeading.classList.add('subHeading');
 mainHeading.appendChild(mainHeadingText);
